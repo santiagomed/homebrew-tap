@@ -5,20 +5,20 @@
 class Boil < Formula
   desc ""
   homepage "https://github.com/santiagomed/boil"
-  version "0.1.0-beta"
+  version "0.1.1-beta"
 
   on_macos do
     on_intel do
-      url "https://github.com/santiagomed/boil/releases/download/v0.1.0-beta/boil_Darwin_x86_64.tar.gz"
-      sha256 "8240c75b6fcc54395e6b0b113b7bda508c0de9f180740f5375c0ff5e49824226"
+      url "https://github.com/santiagomed/boil/releases/download/v0.1.1-beta/boil_Darwin_x86_64.tar.gz"
+      sha256 "a431ffcebc933d9a9f39c42f31e4069d88d919b3f2b16142c5e6cae2fac64ad6"
 
       def install
         bin.install "boil"
       end
     end
     on_arm do
-      url "https://github.com/santiagomed/boil/releases/download/v0.1.0-beta/boil_Darwin_arm64.tar.gz"
-      sha256 "02dadd526f48ee8f7e01e4d72227a554fbd281cf82d7f1a0ec27489a07b99d1b"
+      url "https://github.com/santiagomed/boil/releases/download/v0.1.1-beta/boil_Darwin_arm64.tar.gz"
+      sha256 "91c546dc1eb90359dbc8fe0833f0163ae98908d03305ba5b01039e2d275052ee"
 
       def install
         bin.install "boil"
@@ -29,8 +29,8 @@ class Boil < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/santiagomed/boil/releases/download/v0.1.0-beta/boil_Linux_x86_64.tar.gz"
-        sha256 "ef246997639e0d941180b13ae0482aa08303486e31a8201ac99be4151054511b"
+        url "https://github.com/santiagomed/boil/releases/download/v0.1.1-beta/boil_Linux_x86_64.tar.gz"
+        sha256 "a8ed8118fa57586de4130242ca17ed1ceeefd0095af0ce6d049b6289abcf306d"
 
         def install
           bin.install "boil"
@@ -39,8 +39,8 @@ class Boil < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/santiagomed/boil/releases/download/v0.1.0-beta/boil_Linux_arm64.tar.gz"
-        sha256 "1b36431916a3112080561687780605c86078d814a55993221b74e01140f039d1"
+        url "https://github.com/santiagomed/boil/releases/download/v0.1.1-beta/boil_Linux_arm64.tar.gz"
+        sha256 "9ecdb560c8fc975a80dcd13925d7f676eeddba0e23dff1b078db2edb04404241"
 
         def install
           bin.install "boil"
