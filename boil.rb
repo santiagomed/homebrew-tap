@@ -10,7 +10,7 @@ class Boil < Formula
   on_macos do
     on_intel do
       url "https://github.com/santiagomed/boil/releases/download/v2.0.1-beta/boil_Darwin_x86_64.tar.gz"
-      sha256 "a37c82d045627b08b2b1432126fbe211964b6c962678227cbd626e97f5435ce7"
+      sha256 "1a3b67920a518dcd6c5dd649486b2896e825c23b2be4a0c2af539ece29c3b355"
 
       def install
         bin.install "boil"
@@ -18,7 +18,7 @@ class Boil < Formula
     end
     on_arm do
       url "https://github.com/santiagomed/boil/releases/download/v2.0.1-beta/boil_Darwin_arm64.tar.gz"
-      sha256 "3383820860a9fcf5395d84073a407dbb3ba450ce86b9968a93b919964af831d5"
+      sha256 "5bedda1d8bf7ad6fc8860bd880e7bbac8f172a614e97edab4b27bf4c327aa265"
 
       def install
         bin.install "boil"
@@ -30,7 +30,7 @@ class Boil < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/santiagomed/boil/releases/download/v2.0.1-beta/boil_Linux_x86_64.tar.gz"
-        sha256 "7537a35c0540c732979d669fb69e685ce772ba38fe1bf56c00fa43dca84aaacb"
+        sha256 "e92d4c437ba2ddd5ec21f06dd1dffbfbaaafb540f966049ce450df2ccb744197"
 
         def install
           bin.install "boil"
@@ -40,7 +40,7 @@ class Boil < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/santiagomed/boil/releases/download/v2.0.1-beta/boil_Linux_arm64.tar.gz"
-        sha256 "e7dfcba746a700f5181b87be94f2284bb20bd49dc49d545b566f975aa9cdb193"
+        sha256 "3f8db90849c348d8a67ca1e55bab7611ccba31b92e177a5e01a9ee9db6b51146"
 
         def install
           bin.install "boil"
